@@ -1,0 +1,85 @@
+.bar {
+	background: #313131;
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+}
+.bar .link {
+	float: left;
+	display: block;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.bar .link:hover {
+	color: #fff;
+	background: #313131;
+}
+.bar .link.active {
+	color: #fff;
+	background: #313131;
+}
+@font-face {
+	font-family: "CookieMonster";
+	src: url(Cookiemonster-gv11.ttf);
+}
+.container {
+	margin-top: 125px;
+	display: flex;
+	align-items: flex-end;
+	gap: 150px;
+	background-image: "OIP\ \(1\).png";
+	background-repeat: no-repeat;
+}
+.title {
+	font-family: "CookieMonster";
+	font-size: 150px;
+	padding: 0px 20px 50px 50px;
+	color: #f018d7;
+	display: inline-flex;
+	align-items: flex-end;
+	margin: 0;
+}
+.button {
+	font-family: "CookieMonster";
+	overflow: hidden;
+	font-size: 100px;
+	box-sizing: border-box;
+	min-width: fit-content;
+	max-height: fit-content;
+	min-height: fit-content;
+	background-color: #7a49a5;
+	display: inline-flex;
+	align-items: flex-end;
+	margin-bottom: 50px;
+	text-align: center;
+	padding : 5px 20px;
+	position:relative;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 0px 5px #7a49a5;
+	box-decoration-break: slice;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 1;
+}
+.button:before {
+	content: "";
+	position: absolute;
+	inset: 5px;
+	background: #f018d7;
+	border-radius: inherit;
+	transform: scale(1);
+	transition: transform 1s ease-out;
+	z-index: -1;
+}
+.button:hover::before {
+    transform: scale(0);
+}
+.bg {
+	background-image: url("OIP1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
+}
